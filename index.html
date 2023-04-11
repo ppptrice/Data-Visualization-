@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Interacting with data: Voter trends and turnouts</title>
+        <title>Interacting with data</title>
         <style>
         	html {
 				margin: 0;
@@ -9,17 +9,37 @@
 				height: 100%;
 			}
 			body { 
-				font: 100% georgia, sans-serif;
-				line-height: 1.8em;
-				color: #555753; 
+				font: 100% arial, sans-serif;
+				line-height: 1.8em; 
 				height:100%
+			}
+			h2 {
+				font: 175% Georgia;
+				text-decoration: underline
+			}
+			h3 {
+				font: 125% arial
 			}
 		</style>
     </head>
 
     <body>
-    	<h2> Part 1 - Voting habits</h2>
-    	<iframe src="Leave_Fig.html" title="Bubble plot" width = "80%" height = "80%" 
+		<p style = 'font:bold; font-family:times new roman ; color:cadetblue; font-size:200%;'> Interacting With Data: Voter Trends and Turnouts</p>
+    	<h2> Part 1 - Voting habits </h2>
+		<h3> Does frequency of voting change with income and education levels? </h3>
+    	<iframe src="categories.html" title="Parallel categories plot of voter habits" width = "100%" height = "60%" 
     	frameBorder="0"></iframe> 
+
+		<h2> Part 2 - Voter turnout and absentee voting through the years</h2>
+		<h3> How did voter turnout and absentee voting change in Virginia General Elections 
+			 from 2014 to 2022?</h3>
+		<iframe src="bubble.html" title="bubble chart of voter turnout and absentee voting" width = "70%" height = "90%" 
+    	frameBorder="0"></iframe>
+
+		<h2> Part 3 - Map of voter turnout in Virginia counties and cities</h2>
+		<h3> Question: What did voter turnout look like in cities and counties in Virginia in the 2022 general 
+			 election?</h3>
+		<iframe src="map.html" title="choropleth map of voter turnout in Virginia" width = "90%" height = "90%" 
+    	frameBorder="0"></iframe>
     </body>
 </html>
